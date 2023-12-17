@@ -1,0 +1,21 @@
+Alpha 0.1.2
+	Jul 31, 2016
+	Major Engine Rework:
+		-Streamlined level/levelState and entities system
+			-Each level still has own levelXClass, but all extend from a central level class that extends from the GameState class
+			-common methods/objects/variables (not sure of correct terminology) are created [initialized?] in the main level class, then are defined in the level subclasses (music name and directory, arraylist of entities, also update, init, control and event methods).
+			-similar changes to MapObject and subclasses
+		-made minor visual changes to sprites so hitboxes fit the sprite appropriately
+			-new temporary sprite for Slugger so player can hit enemies with gun (with new hitbox fix, hitting with bullets was impossible)
+	What's next:
+		-Dialogue (little speech tutorial, similar to talking boxes in Yoshi's Island)
+		-Score and points system
+		-More music
+		-New Slugger sprite
+		-New enemies and enemy behavior
+		-Particle effects for enemies
+		-Changelog Menu option, brings to screen that reads and displays changelog file(s)
+	Far Future plans:
+		-Weapons system
+		-Mouse-controlled shooting
+		-Shooting enemies (rotating/auto-aiming laser turret?)
