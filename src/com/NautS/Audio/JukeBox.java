@@ -24,7 +24,7 @@ public class JukeBox {
 		try {			
 			AudioInputStream ais =
 				AudioSystem.getAudioInputStream(
-					JukeBox.class.getResourceAsStream(s)
+					JukeBox.class.getResource(s)
 				);
 			AudioFormat baseFormat = ais.getFormat();
 			AudioFormat decodeFormat = new AudioFormat(
